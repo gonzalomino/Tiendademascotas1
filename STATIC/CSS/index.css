@@ -66,10 +66,23 @@ h1 {
     font-family: "h1";
     font-size: 30px;
 }
-
+/*aca comienza el estilo del primer section*/
+.first-section {
+    background-image: url(../img/gatitos/gatitos4.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 40vh;
+}
+.happy {
+    margin-left: 15px;
+    color: #fff;
+    font-size: 50px;
+    text-shadow: #006e50 solid;
+}
 /*aca comienza el estilo de los review*/
 .section-review {
     display: flex;
+    margin-left: 230px;
 }
 .review {
     padding: 5px 5px;
@@ -78,5 +91,19 @@ h1 {
     border-color: var(--color--7--review);
     border-style: solid;
     text-align: center;
-    width: 100px;
+    width: 280px;
+    height: 400px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.review-autor {
+    margin-top: 15px;
+    color: var(--color--6);
+    font-weight: 500;
+}
+.review-text {
+    margin-top: 15px;
+    font-style: italic;
+    font-size: 12px;
 }
