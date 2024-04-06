@@ -54,7 +54,6 @@ nav {
 }
 .nav-links {
     text-decoration: none;
-
     font-size: 20px;
     color: #000;
     font-weight: 700;
@@ -67,37 +66,35 @@ h1 {
     font-size: 30px;
 }
 /*aca comienza el estilo del primer section*/
-/*.first-section {
-    margin-top: 15px;
-    background-image: url(../img/gatitos/gatitos4.jpg);
-    background-size: cover;
-    background-position: 0 -300px;
-    width: 100vw;
-    height: 70vh;
-}*/
+
+/*body{
+    background: linear-gradient(var(--color--5),var(--color--4),var(--color--7--review));*/
+
 .happy {
     margin-left: 15px;
     color: var(--color--1);
-    font-size: 40px;
+    font-size: 50px;
 }
 .presentacion {
-    margin-left: 500px;
+    margin-left: 700px;
     margin-top: 50px;
     width: 30vw;
     background-color: var(--color--1);
-    opacity: 0.7;
+    opacity: 0.5;
 }
 .indice {
+    margin-left: 15px;
     display: inline-block;
     color: #000;
-    font-size: 45px;
+    font-size: 25px;
 }
 .indice-img {
-    width: 25vw;
+    width: 18vw;
 }
 .indice-texto {
     border: var(--color--1) solid;
     font-style: bold;
+    text-align: center;
 }
 
 /*aca comienza el estilo de los review*/
