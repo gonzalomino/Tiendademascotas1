@@ -100,8 +100,11 @@ h3{
     height: auto;
     border: 2px dotted black;
     padding: 60px;
-    
     text-align: justify;
     margin: 30px;
 }
-
+.primerasection{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
