@@ -91,13 +91,6 @@ h3{
     border-radius: 1%;
     
 }
-.primerasection >img{
-    transition: transform 0.3s ease-in-out;
-}
-.primerasection >img:hover{
-    transform: scale(1.2) rotate(15deg) translate(3vw) ;
-}
-
 .pdimg{
     width: 600px;
     max-width: 100%;
@@ -110,17 +103,26 @@ h3{
     font-family: "h1";
     font-size: 20px;
 }
+.primerasection >img{
+    transition: transform 0.3s ease-in-out;
+}
+.primerasection >img:hover{
+    transform: scale(1.2) rotate(15deg) translate(3vw) ;
+}
 .primerasection{
+    margin: 10px;
+    border: 3px solid var(--color--2) ;
+    box-shadow: 15px 15px 15px #006e50;
    display: flex;
    justify-content: center;
    align-items: center; 
+}
+.verydescarga1{
+    padding-left: 15vw;
 }
 .verydescarga2{
     padding-right: 15vw;
     display: flex;
     justify-content: right; 
     
-}
-.verydescarga1{
-    padding-left: 15vw;
 }
