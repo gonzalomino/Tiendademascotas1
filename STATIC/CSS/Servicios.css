@@ -23,6 +23,7 @@
 }
 body{
     background: linear-gradient(var(--color--5),var(--color--4),var(--color--7--review));
+    
 }
 .logo {
     display: flex;
@@ -67,9 +68,11 @@ h1 {
 #serviciosbody{
     background-color: #008290;
     font-family: "h1";
+    padding-left: 7vw;
     color: white;
-    font-size: 50px;
+    font-size: 80px;
     text-shadow: #006e50 solid;
+    text-align: left;
 }
 h3{
     background-color: #008290;
@@ -78,6 +81,7 @@ h3{
     color:white;
     font-size: 30px;
     text-align: center;
+    padding-top: 0px;
 }
 .imgpelu{
     margin: 5%;
@@ -87,24 +91,36 @@ h3{
     border-radius: 1%;
     
 }
-#movimiento >img{
+.primerasection >img{
     transition: transform 0.3s ease-in-out;
 }
-#movimiento >img:hover{
-    transform: scale(1.2) rotate(45deg) translate(3vw) ;
+.primerasection >img:hover{
+    transform: scale(1.2) rotate(15deg) translate(3vw) ;
 }
 
 .pdimg{
     width: 600px;
     max-width: 100%;
     height: auto;
+    color: rgb(24, 22, 13);
     border: 2px dotted black;
     padding: 60px;
     text-align: justify;
     margin: 30px;
+    font-family: "h1";
+    font-size: 20px;
 }
 .primerasection{
    display: flex;
    justify-content: center;
    align-items: center; 
+}
+.verydescarga2{
+    padding-right: 15vw;
+    display: flex;
+    justify-content: right; 
+    
+}
+.verydescarga1{
+    padding-left: 15vw;
 }
