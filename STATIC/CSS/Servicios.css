@@ -127,3 +127,10 @@ h3{
     justify-content: right; 
     
 }
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: cadetblue;
+    bottom: 0;
+    width: 100%;
+}
