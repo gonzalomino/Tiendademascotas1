@@ -1,5 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 :root {
     --color--1: #9690c0;
     --color--2: #678cb0;
@@ -9,11 +7,7 @@
     --color--6: #006e50;
     --color--7--review: #678cb083;
 }
-
-@font-face {
-    font-family: "h1";
-    src: url("../../ASSETS/FUENTES/Catfiles.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
     margin: 0;
@@ -23,22 +17,30 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
-
+@font-face { 
+    font-family: "h1";
+    src: url("../ASSETS/FUENTES/Catfiles.ttf");
+}
+body{
+    background:rgb(192, 176, 176);
+    
+}
 .logo {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+.logo {
     text-decoration: none;
     transition: transform ease-out 0.2s;
     color: #000;
 }
-
 .logo:hover {
     transform: scale(1.1);
-}
+} 
 
 nav {
-    background: linear-gradient(145deg, var(--color--1), var(--color--4));
+    background: linear-gradient(to bottom, var(--color--1), transparent 90%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,71 +61,76 @@ nav {
 .nav-links:hover {
     color: #fff;
 }
- */
- @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
- :root {
-     --color--1: #9690c0;
-     --color--2: #678cb0;
-     --color--3--fondonav: #2088b0;
-     --color--4: #008290;
-     --color--5: #007970;
-     --color--6: #006e50;
-     --color--7--review: #678cb083;
- }
- 
- @font-face {
-     font-family: "h1";
-     src: url("../../ASSETS/FUENTES/Catfiles.ttf");
- }
- 
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     font-family: "Montserrat", sans-serif;
-     font-optical-sizing: auto;
-     font-style: normal;
- }
- 
- .logo {
-     display: flex;
-     align-items: center;
-     gap: 10px;
- }
- 
- .logo {
-     text-decoration: none;
-     transition: transform ease-out 0.2s;
-     color: #000;
- }
- 
- .logo:hover {
-     transform: scale(1.1);
- }
- 
- nav {
-     background: linear-gradient(to bottom, var(--color--1), transparent 90%);
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 15px 25px;
- }
- 
- .nav {
-     list-style: none;
-     display: flex;
-     gap: 30px;
- }
- 
- .nav-links {
-     text-decoration: none;
-     font-size: 20px;
-     color: #000;
-     font-weight: 700;
- }
- 
- .nav-links:hover {
-     color: #fff;
- }
- 
+h1 {
+    font-family: "h1";
+    font-size: 30px;
+}
+#serviciosbody{
+    background-color: rgb(192, 176, 176);
+    font-family: "h1";
+    padding-left: 7vw;
+    color: var(--color--4);
+    font-size: 80px;
+    text-shadow: #006e50 solid;
+    text-align: left;
+}
+h3{
+    background-color: rgb(192, 176, 176);
+    width: 100vw;
+    height: 20vh;
+    color: var(--color--4);
+    font-size: 30px;
+    text-align: center;
+    padding-top: 0px;
+}
+.imgpelu{
+    margin: 5%;
+    width:20vw; 
+    height:40vh;
+    box-shadow: 8px 8px 8px rgba(0,0,0,0.1);
+    border-radius: 1%;
+    
+}
+.pdimg{
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    color: rgb(24, 22, 13);
+    border: 2px dotted black;
+    padding: 60px;
+    text-align: justify;
+    margin: 30px;
+    font-family: "h1";
+    font-size: 20px;
+}
+.section >img{
+    transition: transform 0.3s ease-in-out;
+}
+.section >img:hover{
+    transform: scale(1.2) rotate(15deg) translate(3vw) ;
+}
+.section{
+    background: var(--color--1);
+    margin: 10px;
+    border: 3px solid var(--color--2) ;
+    box-shadow: 15px 15px 15px var(--color--2);
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+.verydescarga1{
+    padding-left: 15vw;
+}
+.verydescarga2{
+    padding-right: 15vw;
+    display: flex;
+    justify-content: right; 
+    
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: cadetblue;
+    bottom: 0;
+    width: 100%;
+}
