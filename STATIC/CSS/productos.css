@@ -247,7 +247,7 @@ h1 {
 
 /* -------------- FOOTER --------------- */
 .contenedor-foot{
-    background: linear-gradient(to top, var(--color--1), transparent 90%);
+    background: linear-gradient(to top, var(--color--1), transparent 95%);
     display: flex;
     justify-content: space-between;
     align-items:flex-end;
