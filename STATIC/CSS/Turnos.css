@@ -134,3 +134,15 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.contenedor-foot{
+    background: linear-gradient(to top, var(--color--1), transparent 95%);
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    padding: 15px 25px;
+}
+.redes-sociales {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
