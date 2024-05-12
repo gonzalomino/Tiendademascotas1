@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../STATIC/CSS/productos.css">
-    <meta name="description" content="Tienda de mascotas Happy4Pet" />
-    <meta name="author" content="Grupo 1" />
-    <meta name="robot" content="index" />
-    <link rel="icon" type="image/x-icon" href="STATIC/IMG/michi.ico" />
+    <meta name="description" content="Tienda de mascotas Happy4Pet">
+    <meta name="author" content="Grupo 1">
+    <meta name="robot" content="index">
     <title>Productos</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="../index.html" class="logo">
-                <img src="../STATIC/IMG/michi.png" alt="Gatito" width="50px" />
-                <h1>Happy4Pet</h1>
-            </a>
-            <ul class="nav">
-                <li> 
-                    <a href="../index.html" class="nav-links">Inicio</a>
-                </li>
-                <li>
-                    <a href="../HTML/Servicios.html" class="nav-links">Servicios</a>
-                </li>
-                <li>
-                    <a href="../Tiendademascotas1/HTML/productos.html" class="nav-links">Productos</a>
-                </li>
-                <li>
-                    <a href="../HTML/turnos.html" class="nav-links">Turnos</a>
-                </li>
-            </ul>
+            <div class="nav-bar">
+                <a href="../index.html" class="logo">
+                    <img src="../STATIC/IMG/michi.png" alt="Gatito" width="50px">
+                    <h1>Happy4Pet</h1>
+                </a>
+                <ul class="ul1">
+                    <li class="nav-li"><a href="../index.html" class="nav-links">Inicio</a></li>
+                    <li class="nav-li"><a href="../HTML/Servicios.html" class="nav-links">Servicios</a></li>
+                    <li class="nav-li"><a href="../HTML/turnos.html" class="nav-links">Turnos</a></li>
+                </ul>
+                <div class="contenedor-ico">
+                    <div class="contenedor-carrito-ico">
+                        <img src="../STATIC/IMG/iconos/carrito-de-compras.png" class="icono-carrito" alt="carrito">
+                        <div class="contador-productos">
+                            <span id="contador-prd">0</span>
+                        </div>
+                    </div>
+                    <div class="contenedor-carrito-productos hidden-carrito">
+                        <div class="fila-productos hidden">
+                            <div class="carrito-producto">
+                                <div class="info-carrito-producto">
+                                    <span class="cantidad-producto-carrito">1</span>
+                                    <p class="titulo-producto-carrito">Alimento Balanceado</p>
+                                    <span class="precio-producto-carrito">$10000</span>
+                                </div>
+                                <img src="../STATIC/IMG/iconos/cerrar.png" alt="cerrar" class="icono-cerrar">
+                            </div>
+                        </div>
+                        <div class="carrito-total hidden">
+                            <h4>Total:</h4>
+                            <span class="total-pagar">$200</span>
+                        </div>
+                        <p class="carrito-vacio">El carrito está vacío</p>
+                    </div>
+                </div>    
+            </div>    
         </nav>
     </header>
     <main>
@@ -60,203 +76,195 @@
                     </li>
                 </ul> 
             </div>
-            <div class="contenedor2">
+            <div class="contenedor-cards">
                 <div class="card">
-                    <div class="contenido-card">
-                        <img class="imgCard" src="../STATIC/IMG/productos/alimento/agility gatos.jpeg" alt="alimento" id="al1">
-                        <div>
-                          <h3 class="titulo-prod">Alimento Agility Gatos</h3>
-                            <p class="descripcion-prod"> Presentación de 1.5 y 10 kg.
-                            Fórmula exclusivamente diseñada, con ingredientes de alta
-                            calidad, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, laborum? Dicta sequi iusto voluptate facere labore explicabo, deleniti autem dolore minus corrupti amet! 
-                            Repellat, dicta recusandae voluptatem quasi voluptas atque!
-                            </p>
-                            <button class="boton-compra" type="button">Añadir</button>
-                            <button class="boton-compra" type="button">Deshacer</button>
-                        </div>
-                    </div>
+                    <img class="imgCard" src="../STATIC/IMG/productos/alimento/agility gatos.jpeg" alt="alimento" id="al1">
+                    <h3 class="titulo-producto">Alimento Agility Gatos</h3>
+                    <p class="descripcion-producto">Presentación 15 kg</p>
+                    <span class="precio">$35000</span>
+                    <button class="boton-compra" type="button">Añadir</button>    
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/alimento/royal canin.png" alt="alimento"> 
-                    <h3 class="titulo-prod">Alimento Royal Canin Perros</h3>
-                    <p class="descripcion-prod">Descripción: ...</p>
+                    <h3 class="titulo-producto">Alimento Royal Canin Perros</h3>
+                    <p class="descripcion-producto">Presentación 25 kg</p>
+                    <span class="precio">$20000</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/alimento/wishkascat.jpeg" alt="alimento">
-                    <h3 class="titulo-prod">Imagen Producto x </h3>
-                    <p class="descripcion-prod">Descripción: ...</p>
+                    <h3 class="titulo-producto">Alimento Whiskas Gatos</h3>
+                    <p class="descripcion-producto">Presentación 25 kg </p>          
+                    <span class="precio">$15000</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/alimento/pedigree perros.jpeg" alt="alimento">
-                    <h3 class="titulo-prod">Imagen Producto x </h3>
-                    <p class="descripcion-prod">Descripción: ...</p>
+                    <h3 class="titulo-producto">Alimento Pedigree</h3>
+                    <p class="descripcion-producto">Presentación 5 kg</p>
+                    <span class="precio">$9000</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/premios/biscrock.jpeg" alt="premios" id="pre1">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ...</p>
+                    <h3 class="titulo-producto">Biscrok croquetas</h3>
+                    <p class="descripcion-producto">Paquetetitos con 60 unidades</p>
+                    <span class="precio">$6000</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/premios/catlicius.jpeg" alt="premios">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ...</p>
+                    <h3 class="titulo-producto">Cat-licious snak</h3>
+                    <p class="descripcion-producto">Sobrecitos</p>
+                    <span class="precio">$4000</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/premios/cookies-cat.jpeg" alt="premios">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ...</p>
+                    <h3 class="titulo-producto">Cookies Cat</h3>
+                    <p class="descripcion-producto">Cookies artesanales</p>
+                    <span class="precio">$3500</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/premios/cookies.jpeg" alt="premios">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ...</p>
+                    <h3 class="titulo-producto">Cookies Dog</h3>
+                    <p class="descripcion-producto">Cookies artesanales</p>
+                    <span class="precio">$2000</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/premios/galletitas.jpeg" alt="premios">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ...</p>
+                    <h3 class="titulo-producto">Snak a'bite</h3>
+                    <p class="descripcion-producto">Snak gatitos</p>
+                    <span class="precio">$1000</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/premios/whiskas.jpeg" alt="premios">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ...</p>
+                    <h3 class="titulo-producto">Sticks - Whiskas</h3>
+                    <p class="descripcion-producto">Sabrosos stickis</p>
+                    <span class="precio">$2000</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/juguetes/juguete.jpeg" alt="jueguete" id="ju1">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ...</p>
+                    <h3 class="titulo-producto">Juguete Gatos</h3>
+                    <p class="descripcion-producto">Palito con plumas de colores</p>
+                    <span class="precio">$5500</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/juguetes/pelotita1.jpeg" alt="jueguete">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ...</p>
+                    <h3 class="titulo-producto">Pelotitas</h3>
+                    <p class="descripcion-producto">clásicas pelotitas</p>
+                    <span class="precio">$400</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/juguetes/pelotita2 - erizo.jpeg" alt="jueguete">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ...</p>
+                    <h3 class="titulo-producto">Pelotita erizo</h3>
+                    <p class="descripcion-producto">divertida pelotita erizo</p>
+                    <span class="precio">$600</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/juguetes/pelotita3.jpeg" alt="jueguete">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ...</p>
+                    <h3 class="titulo-producto">Pelotitas saltarina</h3>
+                    <p class="descripcion-producto">Varios motivos</p>
+                    <span class="precio">$500</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/juguetes/raton1.jpeg" alt="jueguete">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ... </p>
+                    <h3 class="titulo-producto">Ratoncito</h3>
+                    <p class="descripcion-producto">Ratoncito de peluche</p>
+                    <span class="precio">$800</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/juguetes/rodillo.jpeg" alt="jueguete">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ... </p>
+                    <h3 class="titulo-producto">Juguete interactivo</h3>
+                    <p class="descripcion-producto">Incluye pelotitas</p>
+                    <span class="precio">$3500</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/combeb/comedero bebe gat.jpeg" alt="bebedero" id="beb1">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ... </p>
+                    <h3 class="titulo-producto">Bebedero</h3>
+                    <p class="descripcion-producto">Gatos y perros</p>
+                    <span class="precio">$2500</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/combeb/comedero gatos.jpeg" alt="comedero">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ... </p>
+                    <h3 class="titulo-producto">Bebedero/Comedero</h3>
+                    <p class="descripcion-producto"></p>
+                    <span class="precio">$3500</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/combeb/comedero perros.jpeg" alt="">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ... </p>
+                    <h3 class="titulo-producto">Bebedero/Comedero</h3>
+                    <p class="descripcion-producto"></p>
+                    <span class="precio">$3500</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/camas/cama.jpeg" alt="cama" id="cama1">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ... </p>
+                    <h3 class="titulo-producto">Cama cuadrada clásica</h3>
+                    <p class="descripcion-producto"></p>
+                    <span class="precio">$3500</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/camas/cama2.jpeg" alt="cama">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ... </p>
+                    <h3 class="titulo-producto">Cama redonda</h3>
+                    <p class="descripcion-producto"></p>
+                    <span class="precio">$3500</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/camas/cama3.jpeg" alt="cama">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ... </p>
+                    <h3 class="titulo-producto">Cama redonda</h3>
+                    <p class="descripcion-producto"> </p>
+                    <span class="precio">$3500</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/camas/cama 4.jpeg" alt="cama">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ... </p>
+                    <h3 class="titulo-producto">Cama de mimbre</h3>
+                    <p class="descripcion-producto"> </p>
+                    <span class="precio">$3500</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/collar/collar pañuelo.jpeg" alt="collar" id="collar1">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ... </p>
+                    <h3 class="titulo-producto">Collar con bandolera</h3>
+                    <p class="descripcion-producto"></p>
+                    <span class="precio">$3500</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/collar/collar.jpeg" alt="">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ... </p>
+                    <h3 class="titulo-producto">Collar</h3>
+                    <p class="descripcion-producto">Varios tamaños y colores</p>
+                    <span class="precio">$3500</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/collar/pechera.jpeg" alt="">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ... </p>
+                    <h3 class="titulo-producto">Pechera</h3>
+                    <p class="descripcion-producto">Reforzada, clásica</p>
+                    <span class="precio">$3500</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
                 <div class="card">
                     <img class="imgCard" src="../STATIC/IMG/productos/collar/collar luz.png" alt="">
-                    <h3 class="titulo-prod">Imagen Producto x</h3>
-                    <p class="descripcion-prod">Descripción: ... </p>
+                    <h3 class="titulo-producto">Collar luminoso</h3>
+                    <p class="descripcion-producto">Varios colores y tamaños</p>
+                    <span class="precio">$3500</span>
                     <button class="boton-compra" type="button">Añadir</button>
-                    <button class="boton-compra" type="button">Deshacer</button>
                 </div>
             </div>
         </div>
@@ -281,6 +289,7 @@
             </div>
         </div>
     </footer>
+    <script src="../STATIC/js/productos.js"></script>
 </body>
 
 </html>
