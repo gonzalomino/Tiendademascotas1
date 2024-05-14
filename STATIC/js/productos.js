@@ -1,25 +1,31 @@
 const btnCarrito = document.querySelector('.contenedor-carrito-ico');
-const containerCarritoProductos = document.querySelector('.contenedor-carrito-productos');
+const containerCarritoProductos = document.querySelector(
+    '.contenedor-carrito-productos'
+);
 
 btnCarrito.addEventListener('click', () => {
     containerCarritoProductos.classList.toggle('.hidden-carrito')
 
 });
 
-const carritoInfo = document.querySelector('.carrito-producto')
-const filaProducto = document.querySelector('.fila-productos')
+const carritoInfo = document.querySelector('.carrito-producto');
+const filaProducto = document.querySelector('.fila-productos');
 
-const productosLista = document.querySelector('.contenedor-cards')
+const productosLista = document.querySelector('.contenedor-cards');
 
 let todosProductos = [];
 
-let valorTotal = document.querySelector('.total-pagar')
+const valorTotal = document.querySelector('.total-pagar');
 
-const contadorProductos = document.querySelector('#contador-prd')
+const carritoVacio = document.querySelector('.carrito-vacio');
+
+const carritoTotal = document.querySelector('.carrito-total');
+
+const contadorProductos = document.querySelector('#contador-prd');
 
 productosLista.addEventListener('click', e => {
     if (e.target.classList.contains('boton-compra')) {
-        const producto = e.target.parentElement
+        const producto = e.target.parentElement;
 
         const infoProducto = {
             quantity: 1,
@@ -27,14 +33,14 @@ productosLista.addEventListener('click', e => {
             price: producto.querySelector('.precio').textContent,
         };
 
-        const existe = todosProductos.some(producto => producto.title === infoProducto.title)
+        const existe = todosProductos.some(producto => producto.title === infoProducto.title);
         if(existe){
             const producto = todosProductos.map(producto =>{
                 if(producto.title === infoProducto.title) {
                     producto.quantity++ ;
-                    return producto
+                    return producto;
                 } else {
-                    return producto
+                    return producto;
                 }
             })
             todosProductos = [...producto];
@@ -47,26 +53,30 @@ productosLista.addEventListener('click', e => {
 
 });
 
-filaProducto.addEventListener('click', (e)=> {
+filaProducto.addEventListener('click', e=> {
     if(e.target.classList.contains('icono-cerrar')){
         const producto = e.target.parentElement
         const titulo = producto.querySelector('p').textContent
 
-        todosProductos = todosProductos.filter(producto => producto.title !== title);
+        todosProductos = todosProductos.filter(producto => producto.title !== titulo);
 
-        console.log(todosProductos)
+        console.log(todosProductos);
         showHTML();
     }
 });
 
 const showHTML = () => {
-    if(!todosProductos.length){
-        containerCarritoProductos.innerHTML= `
-            <p class="carrito-vacio">El carrito está vacío</p>
-        `
+    if(!todosProductos.length) {
+        carritoVacio.classList.remove('hidden');
+        filaProducto.classList.add('hidden');
+        carritoTotal.classList.add('hidden');
+    } else {
+        carritoVacio.classList.add('hidden');
+        filaProducto.classList.remove('hidden');
+        carritoTotal.classList.remove('hidden');
     }
 
-    filaProducto.innerHTML='';
+    filaProducto.innerHTML= '';
 
     let total = 0;
 
@@ -91,7 +101,7 @@ const showHTML = () => {
         totalProductos = totalProductos + producto.quantity;
     });
 
-    valorTotal.innerText = `$${total}`
+    valorTotal.innerText = `$${total}`;
     contadorProductos.innerText = totalProductos;
 };
 
