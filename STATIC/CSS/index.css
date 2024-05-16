@@ -289,7 +289,9 @@ details:hover {
 /*ubicacion*/
 
 .ubicacion {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .texto-ubicacion {
     color: var(--color--5);
