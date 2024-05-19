@@ -66,7 +66,7 @@ filaProducto.addEventListener('click', e=> {
 });
 
 const showHTML = () => {
-    if(!todosProductos.length) {
+    if(todosProductos.length === 0) {
         carritoVacio.classList.remove('hidden');
         filaProducto.classList.add('hidden');
         carritoTotal.classList.add('hidden');
@@ -76,7 +76,7 @@ const showHTML = () => {
         carritoTotal.classList.remove('hidden');
     }
 
-    filaProducto.innerHTML= '';
+    filaProducto.innerHTML= "";
 
     let total = 0;
 
