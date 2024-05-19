@@ -123,13 +123,13 @@ h3 {
     display: flex;
     justify-content: right;
 }
-footer {
+/* footer {
     display: flex;
     justify-content: center;
     background-color: cadetblue;
     bottom: 0;
     width: 100%;
-}
+} */
 .contenedor-foot {
     background: linear-gradient(to top, var(--color--1), transparent 95%);
     display: flex;
