@@ -65,6 +65,12 @@ h1 {
     font-family: "h1";
     font-size: 30px;
 }
+#checkbox {
+    display: none;
+}
+.checkboton {
+    display: none;
+}
 /*HEADER*/
 .happy {
     color: var(--color--6);
@@ -311,7 +317,78 @@ details:hover {
     justify-content: space-between;
     margin-top: 0.5rem;
 }
+/*responsive*/
+.nav-div-responsive {
+    display: none;
+}
+@media screen and (max-width: 878px) {
+    a {
+        text-decoration: none;
+    }
+    .nav {
+        display: none;
+    }
+    .nav-div-responsive {
+        display: block;
+        position: relative;
+    }
 
+    .checkboton {
+        display: block;
+        float: right;
+        font-size: 25px;
+        padding: 5px 5px;
+        cursor: pointer;
+    }
+
+    .nav-responsive {
+        text-align: center;
+        position: fixed;
+        width: 100vw;
+        height: calc(100vh - 80px);
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+        background: var(--color--1);
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .nav-links-responsive:hover {
+        color: #fff;
+    }
+    .li-responsive {
+        padding: 0.2em;
+        display: flex;
+        float: right;
+    }
+    .nav-links-responsive {
+        padding-top: 20px;
+        margin-right: 20px;
+
+        color: #000;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .nav-responsive-button {
+        float: right;
+    }
+    #checkbox {
+        display: unset;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        filter: opacity(0);
+        cursor: pointer;
+    }
+    #checkbox:checked ~ .nav-responsive {
+        left: 0;
+    }
+}
 @media screen and (max-width: 878px) {
     .second-section {
         display: none;
