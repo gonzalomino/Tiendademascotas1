@@ -34,10 +34,32 @@
         </nav>
     </header>
         <main>
+        <section>
             <h2 id="serviciosbody">Turnos</h2>
             <h3>Tu mascota merece una gran atencion!</h3>
+        </section>
  <!-- "Turnos" -->
-
+<section class="formulario-container">
+    <p>Seleccione su turno</p>
+    <div>
+        <select name="tipodeturno" id="tipodeturno">
+            <option value="castracion">
+                Castraciones               
+            </option>
+            <option value="veterinaria">                              
+                Veterinaria
+            </option>
+            <option value="Peluquería">
+            Peluquería
+            </option>
+            <option value="Vacunación">
+                Vacunación
+                </option>
+                <option value="Adopciones">
+                    Adopciones
+                    </option>
+        </select>
+    </div>
                 <div>
                     <form action="Turnos.html" onsubmit = "return validardatos()">
                     <label for="">Nombre:</label>
@@ -65,13 +87,15 @@
                     <option value=""></option>
                     <option value="M">M</option>
                     <option value="H">H</option>
-                    <section>
+                
+                    
             </div>
             <div>
                 <br>
                 <input type="submit" value="Enviar">
                 <input type="reset" value="borrar">
             <div>
+            </section>
  </main>
 <footer>
     <div class="contenedor-foot">

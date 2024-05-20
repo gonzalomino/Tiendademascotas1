@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 :root {
     --color--1: #9690c0;
     --color--2: #678cb0;
@@ -7,7 +9,11 @@
     --color--6: #006e50;
     --color--7--review: #678cb083;
 }
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+    font-family: "h1";
+    src: url("../../ASSETS/FUENTES/Catfiles.ttf");
+}
 
 * {
     margin: 0;
@@ -17,13 +23,9 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
-@font-face { 
-    font-family: "h1";
-    src: url("../ASSETS/FUENTES/Catfiles.ttf");
-}
-body{
-    background:rgb(192, 176, 176);
-    
+
+body {
+    background: rgb(192, 176, 176);
 }
 .logo {
     display: flex;
@@ -37,7 +39,7 @@ body{
 }
 .logo:hover {
     transform: scale(1.1);
-} 
+}
 
 nav {
     background: linear-gradient(to bottom, var(--color--1), transparent 90%);
@@ -53,7 +55,6 @@ nav {
 }
 .nav-links {
     text-decoration: none;
-
     font-size: 20px;
     color: #000;
     font-weight: 700;
@@ -65,16 +66,15 @@ h1 {
     font-family: "h1";
     font-size: 30px;
 }
-#serviciosbody{
+#serviciosbody {
     background-color: rgb(192, 176, 176);
-    font-family: "h1";
     padding-left: 7vw;
     color: var(--color--4);
     font-size: 80px;
     text-shadow: #006e50 solid;
     text-align: left;
 }
-h3{
+h3 {
     background-color: rgb(192, 176, 176);
     width: 100vw;
     height: 20vh;
@@ -83,15 +83,15 @@ h3{
     text-align: center;
     padding-top: 0px;
 }
-.imgpelu{
+.imgpelu {
     margin: 5%;
-    width:20vw; 
-    height:40vh;
-    box-shadow: 8px 8px 8px rgba(0,0,0,0.1);
+    width: 20vw;
+    height: 40vh;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
     border-radius: 1%;
-    
 }
-.pdimg{
+.pdimg {
+    display: flex;
     width: 600px;
     max-width: 100%;
     height: auto;
@@ -100,40 +100,37 @@ h3{
     padding: 60px;
     text-align: justify;
     margin: 30px;
-    font-family: "h1";
     font-size: 20px;
 }
-.section >img{
+.section > img {
     transition: transform 0.3s ease-in-out;
 }
-.section >img:hover{
-    transform: scale(1.2) rotate(15deg) translate(3vw) ;
+.section > img:hover {
+    transform: scale(1.2) rotate(15deg) translate(3vw);
 }
-.section{
+.section {
     background: var(--color--1);
     margin: 10px;
-    border: 3px solid var(--color--2) ;
+    border: 3px solid var(--color--2);
     box-shadow: 15px 15px 15px var(--color--2);
-   display: flex;
-   justify-content: center;
-   align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.verydescarga1{
+.verydescarga1 {
     padding-left: 15vw;
 }
-.verydescarga2{
+.verydescarga2 {
     padding-right: 15vw;
     display: flex;
-    justify-content: right; 
-    
+    justify-content: right;
 }
 
-
-.contenedor-foot{
+.contenedor-foot {
     background: linear-gradient(to top, var(--color--1), transparent 95%);
     display: flex;
     justify-content: space-between;
-    align-items:flex-end;
+    align-items: flex-end;
     padding: 15px 25px;
 }
 .redes-sociales {
@@ -141,14 +138,8 @@ h3{
     justify-content: space-between;
     margin-top: 0.5rem;
 }
-@media (max-width: 768px) {
-    nav .nav-bar {
-        display: flex;
-        justify-content: center;
-        background: linear-gradient(to bottom, var(--color--1), transparent 90%);
-    }
-    .nav-li {
-        display: inline;
-        list-style: none;
+@media screen and (max-width: 425px) {
+    .nav{
+        flex-wrap: wrap;
     }
 }
