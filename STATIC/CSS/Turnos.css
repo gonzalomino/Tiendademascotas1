@@ -62,17 +62,18 @@ h1 {
     font-size: 30px;
 }
 #serviciosbody {
-    padding-left: 7vw;
-    color: var(--color--4);
+    color: #fff;
     font-size: 80px;
     text-shadow: #006e50 solid;
     text-align: center;
+    width: 100%;
+    background-color: var(--color--4);
 }
 
 h3 {
     width: 100vw;
     height: 20vh;
-    color: var(--color--4);
+    color: #fff;
     font-size: 30px;
     text-align: center;
     padding-top: 0px;
@@ -82,12 +83,26 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: linear-gradient(135deg, var(--color--4), #fff);
 }
 .formulario-container {
     width: 50vh;
-    height: 50vh;
-    background-color: #007970;
+    border: 1px solid #1f1f1f1f;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px #1f1f1f10;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+}
+
+.formulario-container input {
+    padding: 10px 15px;
+    border-radius: 7px;
+    border: 1px solid #1f1f1f1f;
+    width: 100%;
 }
 /* footer {
     display: flex;
