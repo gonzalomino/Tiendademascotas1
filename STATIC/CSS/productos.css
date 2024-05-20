@@ -56,9 +56,6 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
-
-}
     
 @font-face {
     font-family: "h1";
@@ -325,18 +322,6 @@ h1 {
     text-align: center;
 }
 
-.carrito-vacio.hidden {
-    display: none;
-}
-
-.carrito-total.hidden {
-    display: none;
-}
-
-.fila-producto.hidden{
-    display: none;
-}
-
 #contador-prd{
     font-size: 12px;
 }
@@ -384,4 +369,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-top: 0.5rem;
+}
+
+.hidden {
+    display: none;
 }
