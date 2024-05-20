@@ -66,7 +66,7 @@ filaProducto.addEventListener('click', e=> {
 });
 
 const showHTML = () => {
-    if(todosProductos.length === 0) {
+    if(todosProductos.length ===0) {
         carritoVacio.classList.remove('hidden');
         filaProducto.classList.add('hidden');
         carritoTotal.classList.add('hidden');

@@ -9,56 +9,6 @@
     --color--6: #006e50;
     --color--7--review: #678cb083;
 }
-
-@media screen and (max-width: 768px) {
-    nav .nav-bar {
-        display: flex;
-        justify-content: space-between;
-        background: linear-gradient(to bottom, var(--color--1), transparent 90%);
-    }
-    .nav-li {
-        display: inline;
-        list-style: none;
-    }
-
-    .imgCard{
-        object-fit: cover;
-    }
-
-    .descripcion-producto {
-        width: auto;
-    }
-    
-    .titulo-producto {
-        font-size: 15px;
-        color: var(--color--5);
-        text-shadow: 1px #000;
-        margin-bottom: 6px;
-    }
-    
-    .descripcion-producto {
-        font-size: 13px;
-        color: var(--color--4);
-        font-family: Helvetica;
-        width: auto;
-    }
-
-    .boton-compra{
-        display: auto;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    nav .nav-bar {
-        display: flex;
-        justify-content: space-between;
-        background: linear-gradient(to bottom, var(--color--1), transparent 90%);
-    }
-}
-
-@media screen and (max-width: 1024px) {
-
-}
     
 @font-face {
     font-family: "h1";
@@ -87,26 +37,16 @@
     transform: scale(1.1);
 }
 
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 25px;
-    background: linear-gradient(to bottom, var(--color--1), transparent 90%);
-} 
-
-.nav-li {
-  display: inline;
-  list-style-type: none;
-  padding: 15px 15px; 
-} 
-
 .nav-links {
     text-decoration: none;
     font-size: 20px;
     color: #000;
     font-weight: 700;
 } 
+
+.ul1 {
+    margin-left: 400px;
+}
 
 .nav-links:hover {
     color: #fff;
@@ -325,18 +265,6 @@ h1 {
     text-align: center;
 }
 
-.carrito-vacio.hidden {
-    display: none;
-}
-
-.carrito-total.hidden {
-    display: none;
-}
-
-.fila-producto.hidden{
-    display: none;
-}
-
 #contador-prd{
     font-size: 12px;
 }
@@ -384,4 +312,134 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-top: 0.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.box-foot-2 span {
+    font-family: Arial;
+}
+
+/* --------------- mq --------------------*/
+@media screen and (max-width:2560px){
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        transition: transform ease-out 0.2s;
+        color: #000;
+    }
+    
+    .logo:hover {
+        transform: scale(1.1);
+    }
+    
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 25px;
+        background: linear-gradient(to bottom, var(--color--1), transparent 90%);
+    } 
+    
+    .nav-li {
+      display: inline;
+      list-style-type: none;
+      padding: 15px 15px; 
+    } 
+    
+    .nav-links {
+        text-decoration: none;
+        font-size: 20px;
+        color: #000;
+        font-weight: 700;
+    } 
+    
+    .ul1 {
+        margin-left: 200px;
+    }
+    
+    .nav-links:hover {
+        color: #fff;
+    }
+    
+    h1 {
+        font-family: "h1";
+        font-size: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+    nav .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(to bottom, var(--color--1), transparent 90%);
+    }
+    
+    .nav-li {
+        display: inline;
+        list-style: none;
+    }
+
+    .ul1{
+        margin-left: 100px;
+    }
+
+    .contenedor-cards {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 5px;
+    }
+
+    .card{
+        text-align: center;
+        width: 250px;
+        height: 370px;
+        padding-bottom: 5px;
+    }
+
+    .descripcion-producto {
+        width: auto;
+    }
+    
+    .titulo-producto {
+        font-size: 15px;
+        color: var(--color--5);
+        text-shadow: 1px #000;
+        margin-bottom: 6px;
+    }
+    
+    .descripcion-producto {
+        font-size: 13px;
+        color: var(--color--4);
+        font-family: Helvetica;
+        width: auto;
+    }
+
+    .boton-compra{
+        display: auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    nav{
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(to bottom, var(--color--1), transparent 90%);
+    }
+      
+    .nav-li {
+        display: inline;
+        list-style: none;
+    }
+
+    .ul1{
+        margin-left: 100px;
+    }
+
 }
