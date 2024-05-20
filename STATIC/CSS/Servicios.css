@@ -138,3 +138,27 @@ h3 {
     justify-content: space-between;
     margin-top: 0.5rem;
 }
+@media screen and (max-width: 768px){
+    .nav{
+        display: block;
+        position: relative;
+    }
+    #serviciosbody{
+        font-size: 70px;
+    }
+    .pdimg {
+        display: block;
+        position: relative;
+        text-align: justify;
+        width: 100px;
+        padding: 15px;
+        margin: 5px 0px 5px 0px;
+    }
+    .imgpelu {
+        margin-left: 0px;
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+    }
+
+}
