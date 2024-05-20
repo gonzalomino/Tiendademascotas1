@@ -44,10 +44,6 @@
     font-weight: 700;
 } 
 
-.ul1 {
-    margin-left: 400px;
-}
-
 .nav-links:hover {
     color: #fff;
 }
@@ -359,7 +355,7 @@ h1 {
     } 
     
     .ul1 {
-        margin-left: 200px;
+        margin-left: 600px;
     }
     
     .nav-links:hover {
@@ -387,7 +383,7 @@ h1 {
     }
 
     .ul1{
-        margin-left: 100px;
+        margin-left: 50px;
     }
 
     .contenedor-cards {
