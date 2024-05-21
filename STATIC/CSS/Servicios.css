@@ -68,11 +68,10 @@ h1 {
 }
 #serviciosbody {
     background-color: rgb(192, 176, 176);
-    padding-left: 7vw;
     color: var(--color--4);
     font-size: 80px;
     text-shadow: #006e50 solid;
-    text-align: left;
+    text-align: center;
 }
 h3 {
     background-color: rgb(192, 176, 176);
@@ -81,26 +80,33 @@ h3 {
     color: var(--color--4);
     font-size: 30px;
     text-align: center;
-    padding-top: 0px;
 }
 .imgpelu {
     margin: 5%;
-    width: 20vw;
-    height: 40vh;
+    width: 300px;
+    height: 300px;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
     border-radius: 1%;
+    object-fit: cover;
 }
 .pdimg {
     display: flex;
     width: 600px;
-    max-width: 100%;
     height: auto;
     color: rgb(24, 22, 13);
     border: 2px dotted black;
+    background-color: #ffffff2f;
     padding: 60px;
-    text-align: justify;
-    margin: 30px;
+    text-align: left;
+    margin: 10px;
     font-size: 20px;
+}
+
+.titulo-article {
+    font-size: 3em;
+    font-weight: 700;
+    margin: 10px;
+    text-align: center;
 }
 .section > img {
     transition: transform 0.3s ease-in-out;
@@ -109,6 +115,7 @@ h3 {
     transform: scale(1.2) rotate(15deg) translate(3vw);
 }
 .section {
+    width: 100%;
     background: var(--color--1);
     margin: 10px;
     border: 3px solid var(--color--2);
@@ -138,27 +145,27 @@ h3 {
     justify-content: space-between;
     margin-top: 0.5rem;
 }
-@media screen and (max-width: 768px){
-    .nav{
+@media screen and (max-width: 768px) {
+    .nav {
         display: block;
         position: relative;
     }
-    #serviciosbody{
+    #serviciosbody {
         font-size: 70px;
     }
     .pdimg {
         display: block;
         position: relative;
-        text-align: justify;
-        width: 100px;
+        width: 70%;
         padding: 15px;
-        margin: 5px 0px 5px 0px;
     }
     .imgpelu {
-        margin-left: 0px;
-        width: 200px;
-        height: 200px;
-        padding: 20px;
+        display: none;
     }
-
+|
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
